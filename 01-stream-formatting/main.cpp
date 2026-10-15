@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	bool flag;
-	cout << "unesi " << true << " - " << false << endl;
+	cout << "enter " << true << " - " << false << endl;
 	cin >> flag;
 	cout << boolalpha << flag << endl;
 

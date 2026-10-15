@@ -6,7 +6,7 @@ HardCopyBook::HardCopyBook(Book book, int num) : Book(book) {
 }
 
 void HardCopyBook::printNumOfPages() const {
-	cout << "Numer of pages: " << numberOfPages << endl;
+	cout << "Number of pages: " << numberOfPages << endl;
 }
 
 void HardCopyBook::setNumberOfPages(const int num) {

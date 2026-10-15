@@ -18,7 +18,7 @@ int main()
 		loadLibrary(library);
 	}
 	catch (...) {
-		cout << endl << "Error: Could'nt open file. Make sure file is in current directory and that file name is correctly written." << endl;
+		cout << endl << "Error: Couldn't open file. Make sure file is in current directory and that file name is correctly written." << endl;
 		return 0;
 	}
 	displayTitlesFrom(library, "aldous", "Huxley");

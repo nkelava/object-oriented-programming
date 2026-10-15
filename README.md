@@ -8,7 +8,7 @@ Learned skill/topics in class:
 
 2. to describe, recognise, apply objects and classes in OOP
 
-3. STL, static members, friend functions and classes, overloading, inheritance, virtual and abstact classes, interfaces, templates, exceptions
+3. STL, static members, friend functions and classes, overloading, inheritance, virtual and abstract classes, interfaces, templates, exceptions
 
 ## Assignments
 

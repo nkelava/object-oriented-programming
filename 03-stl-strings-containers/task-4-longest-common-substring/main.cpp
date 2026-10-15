@@ -13,9 +13,9 @@ void print(const S str, const T var) {
 
 int main()
 {
-	string str = "SubOstaneSubstring", str2 = "Substring";
+	string str = "SubRemainsSubstring", str2 = "Substring";
 	/*string str = "abab", str2 = "cdcdcd";*/
-	/*string str = "SubOstaneSubstring", str2 = "";*/
+	/*string str = "SubRemainsSubstring", str2 = "";*/
 
 	print("String 1: ", str);
 	print("String 2: ", str2);
@@ -34,9 +34,9 @@ string longest_substrings(const string str1, const string str2)
 
 	string longest = "";
 
-	// Ideja mi je da se ide kroz 1 string,rade substringovi postepeno i provjerava nalaze li se u drugom stringu
-	// ako se nalaze provjerava se je li veci od proslog substringa ako ga ima ako ne longest ce bit prazan
-	//npr. string -> s, st, str, stri, strin, string, t, tr, tri, ... 
+	// The idea is to go through string 1, build substrings gradually and check whether they appear in the other string
+	// if one does, check whether it is longer than the previous substring; if none is found, longest stays empty
+	//e.g. string -> s, st, str, stri, strin, string, t, tr, tri, ... 
 	int str1Len = str1.length();
 	for (int i = 0; i < str1Len; i++) {
 		int firstPos = str2.find(str1[i], 0);
@@ -56,7 +56,7 @@ string longest_substrings(const string str1, const string str2)
 					}
 					continue;
 				}
-				//break da ne radi nepotrebno dalje substring (ako nema abd nece biti ni abdc)
+				//break to avoid needless further substrings (if there is no abd, there won't be abdc either)
 				break;
 			}
 			firstPos = str2.find(str1[i], firstPos + 1);
