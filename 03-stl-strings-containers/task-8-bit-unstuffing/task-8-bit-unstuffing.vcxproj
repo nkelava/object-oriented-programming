@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{BE67BF5D-4BF1-4A93-9FC1-BA3BAAA66D78}</ProjectGuid>
-    <RootNamespace>Task8</RootNamespace>
+    <RootNamespace>Task8BitUnstuffing</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-1", "task-1\task-1.vcxproj", "{9E49E6D6-F64F-4963-BA0F-254DE2E402F4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-1-vector-sum-min-max", "task-1-vector-sum-min-max\task-1-vector-sum-min-max.vcxproj", "{9E49E6D6-F64F-4963-BA0F-254DE2E402F4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-2", "task-2\task-2.vcxproj", "{521C59C7-CEAA-4110-9D37-80D7A081C127}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-2-reverse-words", "task-2-reverse-words\task-2-reverse-words.vcxproj", "{521C59C7-CEAA-4110-9D37-80D7A081C127}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-3", "task-3\task-3.vcxproj", "{96AB1DEB-05E7-4451-8553-0049DFC4701F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-3-erase-substrings", "task-3-erase-substrings\task-3-erase-substrings.vcxproj", "{96AB1DEB-05E7-4451-8553-0049DFC4701F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-4", "task-4\task-4.vcxproj", "{B001C066-0426-41DB-9CE0-B4AAD8D9E2A9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-4-longest-common-substring", "task-4-longest-common-substring\task-4-longest-common-substring.vcxproj", "{B001C066-0426-41DB-9CE0-B4AAD8D9E2A9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-6", "task-6\task-6.vcxproj", "{AC5E63AA-3BFB-42B6-ABD6-E133AE5BAEA6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-6-list-manipulation", "task-6-list-manipulation\task-6-list-manipulation.vcxproj", "{AC5E63AA-3BFB-42B6-ABD6-E133AE5BAEA6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-5", "task-5\task-5.vcxproj", "{5F3F9342-EE89-4CF7-92DD-03587270A6FD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-5-pig-latin", "task-5-pig-latin\task-5-pig-latin.vcxproj", "{5F3F9342-EE89-4CF7-92DD-03587270A6FD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-8", "task-8\task-8.vcxproj", "{BE67BF5D-4BF1-4A93-9FC1-BA3BAAA66D78}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-8-bit-unstuffing", "task-8-bit-unstuffing\task-8-bit-unstuffing.vcxproj", "{BE67BF5D-4BF1-4A93-9FC1-BA3BAAA66D78}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-7", "task-7\task-7.vcxproj", "{16C6D1A5-5C72-4F15-A985-60FF696253A5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-7-bit-stuffing", "task-7-bit-stuffing\task-7-bit-stuffing.vcxproj", "{16C6D1A5-5C72-4F15-A985-60FF696253A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

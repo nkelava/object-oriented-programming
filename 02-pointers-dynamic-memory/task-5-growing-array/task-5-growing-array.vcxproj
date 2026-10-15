@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{5F3F9342-EE89-4CF7-92DD-03587270A6FD}</ProjectGuid>
-    <RootNamespace>Task5</RootNamespace>
+    <ProjectGuid>{5BC51B23-E59B-423D-B9DC-B8C3F38CBF37}</ProjectGuid>
+    <RootNamespace>Task5GrowingArray</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

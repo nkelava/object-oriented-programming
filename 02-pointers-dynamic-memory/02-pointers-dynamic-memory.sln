@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-1", "task-1\task-1.vcxproj", "{EF1C36FA-57A7-427A-8BF3-0DD909070BFD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-1-array-min-max", "task-1-array-min-max\task-1-array-min-max.vcxproj", "{EF1C36FA-57A7-427A-8BF3-0DD909070BFD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-3", "task-3\task-3.vcxproj", "{EE845BD7-11CE-49F8-9AAA-D47600AA14D9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-3-increment-by-reference", "task-3-increment-by-reference\task-3-increment-by-reference.vcxproj", "{EE845BD7-11CE-49F8-9AAA-D47600AA14D9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-4", "task-4\task-4.vcxproj", "{63DD8EA9-7119-4396-8AF3-28E137308FA3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-4-fibonacci-array", "task-4-fibonacci-array\task-4-fibonacci-array.vcxproj", "{63DD8EA9-7119-4396-8AF3-28E137308FA3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-5", "task-5\task-5.vcxproj", "{5BC51B23-E59B-423D-B9DC-B8C3F38CBF37}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-5-growing-array", "task-5-growing-array\task-5-growing-array.vcxproj", "{5BC51B23-E59B-423D-B9DC-B8C3F38CBF37}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-2", "task-2\task-2.vcxproj", "{1534004D-BD77-4019-8406-DD523C483B64}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-2-circle-intersections", "task-2-circle-intersections\task-2-circle-intersections.vcxproj", "{1534004D-BD77-4019-8406-DD523C483B64}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-6", "task-6\task-6.vcxproj", "{CD708E33-B1A3-45C4-88CA-051AF1894537}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-6-custom-vector", "task-6-custom-vector\task-6-custom-vector.vcxproj", "{CD708E33-B1A3-45C4-88CA-051AF1894537}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

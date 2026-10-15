@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{EE845BD7-11CE-49F8-9AAA-D47600AA14D9}</ProjectGuid>
-    <RootNamespace>Task3</RootNamespace>
+    <ProjectGuid>{1534004D-BD77-4019-8406-DD523C483B64}</ProjectGuid>
+    <RootNamespace>Task2CircleIntersections</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

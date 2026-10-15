@@ -13,7 +13,7 @@ Learned skill/topics in class:
 ## Assignments
 
 Each assignment folder has one Visual Studio solution (`.sln`) at its root that opens all of its tasks.
-Every task's entry point is `main.cpp`.
+Tasks live in `task-N-description` folders, and every task's entry point is `main.cpp`.
 
 | # | Folder | Topic | Tasks |
 |---|--------|-------|-------|

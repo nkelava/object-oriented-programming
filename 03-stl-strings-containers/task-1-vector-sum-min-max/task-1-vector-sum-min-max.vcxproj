@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{9E49E6D6-F64F-4963-BA0F-254DE2E402F4}</ProjectGuid>
-    <RootNamespace>Task1</RootNamespace>
+    <RootNamespace>Task1VectorSumMinMax</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
