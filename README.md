@@ -22,7 +22,7 @@ Tasks live in `task-N-description` folders, and every task's entry point is `mai
 | 3 | [`03-stl-strings-containers`](03-stl-strings-containers) | STL `vector`, `string`, `list` | 1. Vector sums and min/max · 2. Reverse word order · 3. Erase all substrings · 4. Longest common substring · 5. Pig Latin translator · 6. List manipulation · 7. Bit stuffing · 8. Bit unstuffing |
 | 4 | [`04-classes-card-game`](04-classes-card-game) | Classes | Card game (`Card`, `Deck`, `Player`) |
 | 5 | [`05-inheritance`](05-inheritance) | Inheritance, exception classes | 1. Card game with input error handling · 2. Drawing on a character board (`Board`, `Point`) |
-| 6 | [`06-polymorphism`](06-polymorphism) | Virtual functions, abstract classes | 1. Library of e-books and hard-copy books · 2. Coin guessing game · 3. Rock, paper, scissors |
+| 6 | [`06-polymorphism`](06-polymorphism) | Virtual functions, abstract classes | 1. Library of e-books and hard-copy books · 2. Coin guessing game · 3. Odd or even |
 | 8 | [`08-operator-overloading`](08-operator-overloading) | Operator overloading | `Money` class (restaurant bill) |
 | 9 | [`09-templates`](09-templates) | Templates | 1. Function templates (sorting) · 2. `Stack` class template |
 | 10 | [`10-exceptions-stl-algorithms`](10-exceptions-stl-algorithms) | Exceptions, STL algorithms | Reading numbers from a file and processing them with STL algorithms |

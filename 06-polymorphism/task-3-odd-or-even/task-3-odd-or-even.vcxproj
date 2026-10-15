@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{28D5BE01-0D6C-41A5-A29F-231D4194698B}</ProjectGuid>
-    <RootNamespace>Task3RockPaperScissors</RootNamespace>
+    <RootNamespace>Task3OddOrEven</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

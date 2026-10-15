@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-1-library", "task-1-li
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-2-coin-guessing-game", "task-2-coin-guessing-game\task-2-coin-guessing-game.vcxproj", "{FF404721-DE20-4BCF-A474-9123F47D4837}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-3-rock-paper-scissors", "task-3-rock-paper-scissors\task-3-rock-paper-scissors.vcxproj", "{28D5BE01-0D6C-41A5-A29F-231D4194698B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "task-3-odd-or-even", "task-3-odd-or-even\task-3-odd-or-even.vcxproj", "{28D5BE01-0D6C-41A5-A29F-231D4194698B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
