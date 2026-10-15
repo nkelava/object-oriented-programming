@@ -2,7 +2,8 @@
 #include <algorithm>
 #include <vector>
 #include <iterator>
-#include <windows.h>
+#include <thread>
+#include <chrono>
 
 #include "Player.h"
 

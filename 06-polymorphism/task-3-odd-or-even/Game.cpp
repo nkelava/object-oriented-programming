@@ -25,7 +25,7 @@ void Game::playGame() {  // Showing choices is just for seeing what's going on a
 	int handSum, turn = 0, another = 1, round = 1;
 
 	while (check_goal() == false) {
-		Sleep(1000);
+		this_thread::sleep_for(chrono::seconds(1));
 		cout << "-------- ROUND " << round << " --------" << endl << endl;
 		players.front()->chooseSign();
 

@@ -1,9 +1,13 @@
 #include "Deck.h"
+#include <random>
+#include <ctime>
 
 void Deck::shuffle()
 {
+	static mt19937 generator(unsigned(time(NULL)));
+
 	for (int i = 0; i < 2; i++)
-		random_shuffle(deck.begin(), deck.end());
+		std::shuffle(deck.begin(), deck.end(), generator);
 }
 
 vector<Card> Deck::deal()

@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <cmath>
 #include <algorithm>
 #include <vector>
 #include <iterator>
