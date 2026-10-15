@@ -46,11 +46,11 @@ void loadLibrary(Library& library) {
 	while (getline(booksFile, fileLine)) {
 		string::size_type classMembSepPos = fileLine.find(';'), multipleSepPos, spacePos;
 
-		// Part of splitted line with authors
+		// Part of split line with authors
 		vector<Author> authors;
 		splittedPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
 
-		// Keep spliting in case there are multiple Authors ',' is separator bewtween
+		// Keep splitting in case there are multiple Authors ',' is separator between
 		if (splittedPart.find(',') != string::npos) {
 			while ((multipleSepPos = splittedPart.find(',')) != string::npos) {
 				name.assign(splittedPart.begin(), splittedPart.begin() + multipleSepPos);
@@ -94,7 +94,7 @@ void loadLibrary(Library& library) {
 
 		// Here I differentiate EBook and HardCopy book
 
-		// If splitted part has  . than it's EBook if not than it's HCbook (File pattern), file and size is in my pattern a requirement 
+		// If split part has . then it's EBook if not then it's HCbook (File pattern), file and size is in my pattern a requirement 
 		// My logic is it's E-Book so it must have file and size
 		if (fileLine.find('.') != string::npos) {
 			classMembSepPos = fileLine.find(';');
@@ -103,7 +103,7 @@ void loadLibrary(Library& library) {
 			// Delete 
 			fileLine.erase(fileLine.begin(), fileLine.begin() + classMembSepPos + 2);
 
-			// Remained part is size part so we need to get rid of MB
+			// Remaining part is size part so we need to get rid of MB
 			/*splittedPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);*/
 			fileLine.erase(fileLine.end() - 3, fileLine.end());
 			fileSizeInMB = stof(fileLine);

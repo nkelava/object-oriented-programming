@@ -68,16 +68,16 @@ void Board::draw_line(Point p1, Point p2, char ch)
 
 void Board::draw(int c1, int c1xy, int c2, char ch, const directions dir, const angles angl) 
 {
-	// Could make this with only one while but than for vertical and horizontal case, in every iteration
+	// Could make this with only one while but then for vertical and horizontal case, in every iteration
 	// it would need to unnecessary check is it diagonal case because both coordinates need to be changed in diag case
-	// (x coord change is always same, but y changes depending on direciton in diagonal case)
+	// (x coord change is always same, but y changes depending on direction in diagonal case)
 	if (angl == verthor) {
-		// Order of function arugments is determined by direction for vertical/horizontal so I can use same function
-		// If it's up/down y is constant, so x needs to be incremented/decremented untill it gets to other x,
+		// Order of function arguments is determined by direction for vertical/horizontal so I can use same function
+		// If it's up/down y is constant, so x needs to be incremented/decremented until it gets to other x,
 		// and for left/right it's reversed( x constant, y needs to change )
 		while (c1 != c2) {
 			(dir == updown) ? draw_char(c1, c1xy, ch) : draw_char(c1xy, c1, ch);
-			(c1 > c2) ? --c1 : ++c1; // Incr/decr depeneding on other cooridinate(inconstant) position(lower/higher)
+			(c1 > c2) ? --c1 : ++c1; // Incr/decr depending on other coordinate(inconstant) position(lower/higher)
 		}
 		(dir == updown) ? draw_char(c1, c1xy, ch) : draw_char(c1xy, c1, ch);
 	}
@@ -99,8 +99,8 @@ void Board::draw(int c1, int c1xy, int c2, char ch, const directions dir, const 
 bool Board::check_diagonal(int x1, int y1, int x2, int y2) {
 	directions dir = (check_direction(x1, y1, x2, y2)) ? brtl : bltr; // Get direction so we know which way to go
 	
-	while (x1 != x2) {  // Go from one point diagonally untill you reach other point
-		if (dir == brtl) {   // Go in direction br-tl or vice verse 
+	while (x1 != x2) {  // Go from one point diagonally until you reach other point
+		if (dir == brtl) {   // Go in direction br-tl or vice versa 
 			(x1 > x2) ? --y1 : ++y1; 
 		}
 		else { 

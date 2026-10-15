@@ -21,7 +21,7 @@ vector<Player*> Game::getPlayers() const {
 	return players;
 }
 
-void Game::playGame() {  // Showing choices is just for seing what's going on and that it's working :D
+void Game::playGame() {  // Showing choices is just for seeing what's going on and that it's working :D
 	int handSum, turn = 0, another = 1, round = 1;
 
 	while (check_goal() == false) {

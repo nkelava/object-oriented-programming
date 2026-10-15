@@ -18,7 +18,7 @@ int main() {
 	vector<int> numbers;
 
 	try {
-		// 1. Throw exception if file dont exist, 2. Fill vector with ints from file
+		// 1. Throw exception if file doesn't exist, 2. Fill vector with ints from file
 		readFile(numbers);
 		// 3. Count all numbers higher than 500
 		countGreaterThan(numbers);
@@ -45,7 +45,7 @@ int main() {
 void readFile(vector<int>& nums) {
 	ifstream inFile("numbers.txt");
 
-	// 1. Throw exception if file dont exist
+	// 1. Throw exception if file doesn't exist
 	if (inFile.is_open() == false) {
 		inFile.close();
 		throw FileNotFoundException();

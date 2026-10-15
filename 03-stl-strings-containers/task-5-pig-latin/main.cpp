@@ -105,7 +105,7 @@ int count_consonants(const string word)
 {
 	int cnt = 1;  // We already know 1st char is consonant
 
-	while (is_vowel(tolower(word[cnt])) == false) { cnt++; } // Increment untill vowel
+	while (is_vowel(tolower(word[cnt])) == false) { cnt++; } // Increment until vowel
 	
 	return cnt;
 }

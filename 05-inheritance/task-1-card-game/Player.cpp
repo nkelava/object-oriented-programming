@@ -23,7 +23,7 @@ int Player::countOfAKind() const
 	}
 	
 	int points = 0;
-	// Go through array of counters and check if any is 3 <= cnt <= 4, if it is than player has a combination so add 
+	// Go through array of counters and check if any is 3 <= cnt <= 4, if it is then player has a combination so add 
 	// right amount of points
 	for_each(begin(ofAKind), end(ofAKind), [&](int& i) {  if (i >= 3) points += i; });
 
@@ -41,7 +41,7 @@ int Player::countNapolitana() const
 
 	for (vector<Card>::const_iterator it = hand.begin(); it != hand.end(); it++) {
 		// Check every suit with value, we need 1B, 2B, 3B, 1D, 2D, 3D,... to have a combination
-		// So is counts how many distinct values(1,2,3) are of a same suit(B,D,K,S) 
+		// So it counts how many distinct values(1,2,3) are of a same suit(B,D,K,S) 
 		for (int i = 0; i < 4; i++) {
 			if (checkNapolitana(it->getValue(), it->getSuit(), Card::cardSuits[i])) { napolitana[i]++;  break; }
 		}

@@ -15,7 +15,7 @@ using namespace std;
 class Deck
 {
 	protected:
-		void size() { cout << deck.size(); }; // Used jsut to test if dealt cards are erased from deck
+		void size() { cout << deck.size(); }; // Used just to test if dealt cards are erased from deck
 		int cardValues[VALUENUM] = { 1, 2, 3, 4, 5, 6, 7, 11 ,12, 13 };
 		char cardSuits[SUITNUM] = { 'B', 'D', 'K', 'S' };
 
