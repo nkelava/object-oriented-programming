@@ -42,7 +42,7 @@ void HumanPlayer::makeAGuess(const int playerCount) {
 	int minTotalScore = 0, maxTotalScore = playerCount * 8, sumChoice;
 
 	do {
-		cout << "Guess the total sum of coins in all hands (from 0 to " << maxTotalScore << " (included): ";
+		cout << "Guess the total sum of coins in all hands (from 0 to " << maxTotalScore << ", included): ";
 		cin >> sumChoice;
 	} while (sumChoice < minTotalScore && sumChoice >maxTotalScore);
 	cout << endl;
