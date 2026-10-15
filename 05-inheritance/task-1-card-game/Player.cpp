@@ -1,6 +1,6 @@
 #include "Player.h"
 
-Player::Player(Deck& deck)
+Player::Player(Deck& deck) : points(0)
 {
 	cout << "Enter player name: ";
 	cin >> name;
