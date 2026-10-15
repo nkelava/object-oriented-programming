@@ -10,5 +10,5 @@ public:
 
 class FileNotFoundException : public Exception {
 public:
-	void ShowError() { cout << "Couldn't open file. Please, check if file name is correct and make sure file is in projects directory." << endl << endl; }
+	void ShowError() { cout << "Couldn't open file. Please, check if file name is correct and make sure the file is in the project's directory." << endl << endl; }
 };

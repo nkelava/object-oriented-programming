@@ -38,7 +38,7 @@ void loadLibrary(Library& library) {
 		throw 13;
 	}
 
-	string fileLine, splittedPart, name;
+	string fileLine, splitPart, name;
 	string firstName = "", lastName = "", title = "", fileName = "";
 	float fileSizeInMB = 0;
 	int year = 0, pageCount = 0;
@@ -48,45 +48,45 @@ void loadLibrary(Library& library) {
 
 		// Part of split line with authors
 		vector<Author> authors;
-		splittedPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
+		splitPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
 
 		// Keep splitting in case there are multiple Authors ',' is separator between
-		if (splittedPart.find(',') != string::npos) {
-			while ((multipleSepPos = splittedPart.find(',')) != string::npos) {
-				name.assign(splittedPart.begin(), splittedPart.begin() + multipleSepPos);
+		if (splitPart.find(',') != string::npos) {
+			while ((multipleSepPos = splitPart.find(',')) != string::npos) {
+				name.assign(splitPart.begin(), splitPart.begin() + multipleSepPos);
 
-				spacePos = splittedPart.find(' ');
+				spacePos = splitPart.find(' ');
 
-				firstName.assign(name.begin(), name.begin() + splittedPart.find(' '));
+				firstName.assign(name.begin(), name.begin() + splitPart.find(' '));
 				lastName = name.substr(spacePos + 1);
 
 				Author author(firstName, lastName);
 				authors.push_back(author);
 
-				splittedPart.erase(splittedPart.begin(), splittedPart.begin() + multipleSepPos + 2);
+				splitPart.erase(splitPart.begin(), splitPart.begin() + multipleSepPos + 2);
 			}
 		}
 
-		spacePos = splittedPart.find(' ');
-		firstName.assign(splittedPart.begin(), splittedPart.begin() + spacePos);
-		lastName = splittedPart.substr(spacePos + 1);
+		spacePos = splitPart.find(' ');
+		firstName.assign(splitPart.begin(), splitPart.begin() + spacePos);
+		lastName = splitPart.substr(spacePos + 1);
 
 		Author author(firstName, lastName);
 		authors.push_back(author);
-		// Delete from line author part, cuz we handled them now parse rest
+		// Delete from line author part, because we handled them now parse rest
 		fileLine.erase(fileLine.begin(), fileLine.begin() + classMembSepPos + 2);
 
 		// Split title part
 		classMembSepPos = fileLine.find(';');
-		splittedPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
-		title = splittedPart;
+		splitPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
+		title = splitPart;
 		// Delete title part
 		fileLine.erase(fileLine.begin(), fileLine.begin() + classMembSepPos + 2);
 
 		// Split year part
 		classMembSepPos = fileLine.find(';');
-		splittedPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
-		year = stoi(splittedPart);
+		splitPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
+		year = stoi(splitPart);
 		// Delete year part
 		fileLine.erase(fileLine.begin(), fileLine.begin() + classMembSepPos + 2);
 
@@ -98,13 +98,13 @@ void loadLibrary(Library& library) {
 		// My logic is it's E-Book so it must have file and size
 		if (fileLine.find('.') != string::npos) {
 			classMembSepPos = fileLine.find(';');
-			splittedPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
-			fileName = splittedPart;
+			splitPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);
+			fileName = splitPart;
 			// Delete 
 			fileLine.erase(fileLine.begin(), fileLine.begin() + classMembSepPos + 2);
 
 			// Remaining part is size part so we need to get rid of MB
-			/*splittedPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);*/
+			/*splitPart.assign(fileLine.begin(), fileLine.begin() + classMembSepPos);*/
 			fileLine.erase(fileLine.end() - 3, fileLine.end());
 			fileSizeInMB = stof(fileLine);
 
@@ -114,7 +114,7 @@ void loadLibrary(Library& library) {
 		// Continue as HCBook
 		else {
 			pageCount = stoi(fileLine);
-			// No need to delete cuz it's last info in row
+			// No need to delete because it's last info in row
 
 			HardCopyBook* hcBook = new HardCopyBook(book, pageCount);
 			//HardCopyBook hcBook(book.pageCount);

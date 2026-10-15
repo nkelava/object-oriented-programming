@@ -15,7 +15,7 @@ void HumanPlayer::chooseCoins() {
 	int coinCnt, choice, sum = 0;
 
 	do {
-		cout << "How many coins you want to pick? Enter number from 0 to 2(included): ";
+		cout << "How many coins do you want to pick? Enter number from 0 to 2(included): ";
 		cin >> coinCnt;
 	} while (coinCnt < 0 && coinCnt > 2);
 
@@ -42,7 +42,7 @@ void HumanPlayer::makeAGuess(const int playerCount) {
 	int minTotalScore = 0, maxTotalScore = playerCount * 8, sumChoice;
 
 	do {
-		cout << "Make a guess what is total sum of coins in hands (from 0 to " << maxTotalScore << " (included): ";
+		cout << "Guess the total sum of coins in all hands (from 0 to " << maxTotalScore << " (included): ";
 		cin >> sumChoice;
 	} while (sumChoice < minTotalScore && sumChoice >maxTotalScore);
 	cout << endl;

@@ -64,12 +64,12 @@ void sum_elements(const vector<int> vect, vector<int>& sumVect)
 
 void print_min_max(const vector<int> vect)
 {
-	vector<int> temVect;
+	vector<int> tempVect;
 	
-	temVect.assign(vect.begin(), vect.end());
+	tempVect.assign(vect.begin(), vect.end());
 
-	sort(temVect.begin(), temVect.end());
+	sort(tempVect.begin(), tempVect.end());
 
-	cout << endl << "Min. element: " << temVect.front() << endl;
-	cout << "Max. element: " << temVect.back() << endl;
+	cout << endl << "Min. element: " << tempVect.front() << endl;
+	cout << "Max. element: " << tempVect.back() << endl;
 }

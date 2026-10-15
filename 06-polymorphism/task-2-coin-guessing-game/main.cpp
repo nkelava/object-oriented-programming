@@ -39,7 +39,7 @@ void create_players(Game& game) {
 	string name = "";
 
 	do {
-		cout << endl << "How you want to play: \n1.All persons\n2.Mix persons and computers\nEnter your choice: ";
+		cout << endl << "How do you want to play: \n1.All persons\n2.Mix persons and computers\nEnter your choice: ";
 		cin >> mode;
 	} while (mode < ALLHUMANMODE && mode > MIXMODE);
 

@@ -17,7 +17,7 @@ void Player::checkPoints()
 int Player::countOfAKind() const
 {
 	int ofAKind[3] = { 0, 0, 0 }; // Counters for 1,2,3 as array
-	// Check if any element is 1,2 or 3, if it is increment his counters(-1 cuz of indexes)
+	// Check if any element is 1,2 or 3, if it is increment its counters(-1 because of indexes)
 	for (vector<Card>::const_iterator it = hand.begin(); it != hand.end(); it++) {
 		if (checkOneOfAKind(it->getValue())) { ofAKind[(it->getValue()) - 1]++; }
 	}

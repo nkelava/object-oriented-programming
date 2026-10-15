@@ -18,7 +18,7 @@ void Book::changeAuthor(const string firstName, const string lastName = "") {
 		Book::printAuthors();
 
 		do {
-			cout << endl << "Enter authors number you want to change: ";
+			cout << endl << "Enter the author's number you want to change: ";
 			cin >> pos;
 		} while (pos <= 0 || pos > size);
 

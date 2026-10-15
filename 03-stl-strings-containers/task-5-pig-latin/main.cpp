@@ -25,7 +25,7 @@ int main()
 
 	create_vector(strVect);
 
-	if (strVect.size() == 0) { return 0; } // In case user inputs quit first so there is no sentences
+	if (strVect.size() == 0) { return 0; } // In case the user enters quit first, so there are no sentences
 
 	int sentenceID = rand() % strVect.size();
 
@@ -88,10 +88,10 @@ string modify_word(string word)
 		return word += (punct.empty()) ? vowelEnd + " "  : vowelEnd +  punct + " ";  // In case there is punctuation in a word
 	}
 	
-	int fronConsLen = count_consonants(word);
-	string fPart = word.substr(0, fronConsLen);
+	int frontConsLen = count_consonants(word);
+	string fPart = word.substr(0, frontConsLen);
 
-	word.erase(0, fronConsLen);
+	word.erase(0, frontConsLen);
 
 	return word += (punct.empty()) ?  fPart + consEnd + " " : fPart += consEnd + punct + " ";
 }

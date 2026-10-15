@@ -28,7 +28,7 @@ void create_players(Game& game) {
 	string name = "";
 
 	do {
-		cout << "How you want to play: \n1.Person vs Computer\n2.Person vs Person\nEnter your choice: ";
+		cout << "How do you want to play: \n1.Person vs Computer\n2.Person vs Person\nEnter your choice: ";
 		cin >> mode;
 	} while (mode < PERSONSMODE && mode > MIXMODE);
 	cout << endl;

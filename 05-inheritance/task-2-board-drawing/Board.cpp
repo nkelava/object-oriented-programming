@@ -69,7 +69,7 @@ void Board::draw_line(Point p1, Point p2, char ch)
 void Board::draw(int c1, int c1xy, int c2, char ch, const directions dir, const angles angl) 
 {
 	// Could make this with only one while but then for vertical and horizontal case, in every iteration
-	// it would need to unnecessary check is it diagonal case because both coordinates need to be changed in diag case
+	// it would need an unnecessary check for the diagonal case because both coordinates need to be changed in diag case
 	// (x coord change is always same, but y changes depending on direction in diagonal case)
 	if (angl == verthor) {
 		// Order of function arguments is determined by direction for vertical/horizontal so I can use same function
